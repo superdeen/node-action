@@ -15,7 +15,10 @@ jobs:
         run: sudo ./meson_cdn config set --token=opvkvyhbbgdthqckvopswayo --https_port=443 --cache.size=30
       - name: start service
         run: sudo ./service start meson_cdn
-        
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.TOKEN }}
       
 
   
