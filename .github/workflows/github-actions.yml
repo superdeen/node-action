@@ -16,10 +16,11 @@ jobs:
       - name: start service
         run: sudo ./service start meson_cdn
       - name: Push changes
-        uses: ad-m/github-push-action@main
-        with:
-          github_token: ${{ secrets.TOKEN }}
-      
+      - uses: actions/checkout@v2
+        with: 
+          repository: Github-Username/node-action
+          token: ${{secrets.ACCESSTOKEN}}
+
 
   
 
