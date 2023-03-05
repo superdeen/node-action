@@ -1,6 +1,6 @@
 name: Meson node
 on: [push]
-permissions: write-all 
+permissions: write-all
 jobs:
     build:
     
