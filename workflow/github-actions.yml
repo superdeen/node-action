@@ -1,5 +1,5 @@
 
-name: Meson node  #name of node
+name: Meson node  #name of nodes
 on:
   - push
 permissions: write-all
