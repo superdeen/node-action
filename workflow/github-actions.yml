@@ -21,7 +21,7 @@ jobs:
       - name: start service
         run: sudo ./service start meson_cdn
       - name: Push changes
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
         with:
           repository: Github-Username/node-action
           token: ${{secrets.ACCESSTOKEN}}
